@@ -10,7 +10,6 @@ import 'package:google_fonts/google_fonts.dart';
 // import 'src/views/current_view.dart';
 import 'src/views/splashscreen_view.dart';
 
-
 void main() => runApp(const Project2048());
 
 /// The app. Here begins the project.
