@@ -1,6 +1,5 @@
 // import flutter packages
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 
 // import pages
 import 'game/game_view.dart';

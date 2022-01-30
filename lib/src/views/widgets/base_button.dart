@@ -21,13 +21,18 @@ class BaseButton extends StatelessWidget {
         borderRadius: BorderRadius.all(Radius.circular(21)),
       ),
       elevation: 3,
-      child: FlatButton(
-        onPressed: onPressed ?? () => debugPrint('"$buttonText" pressed!'),
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(21)),
+      child: TextButton(
+        style: ButtonStyle(
+          // shape: MaterialStateProperty.all<ShapeBorder>(
+          //   const RoundedRectangleBorder(
+          //     borderRadius: BorderRadius.all(Radius.circular(21)),
+          //   ),
+          // ),
+          backgroundColor: MaterialStateProperty.all<Color>(
+            Colors.blueAccent[700],
+          ),
         ),
-        color: Colors.blueAccent[700],
-        focusColor: Colors.grey[850].withOpacity(0.3),
+        onPressed: onPressed ?? () => debugPrint('"$buttonText" pressed!'),
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(21),
